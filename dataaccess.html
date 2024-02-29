@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta name="robots" content="noindex" />
+    <title>Harsha Monsoon Page</title>
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+	<style>
+
+body{
+			height: 100%;
+			width: 100%;
+			padding:0px;
+			margin:0px;
+			overflow:hidden;
+			font-family: 'Optima';
+}
+iframe{
+			border: 0px !important;
+			padding:0px;
+			margin:0px;
+			height:420px !important;
+			position: relative;
+			z-index: 100;
+		}
+#scrollUp {
+    background-image: url(img/top.png);
+    bottom: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+}
+.iframeddesign{
+margin-top:40px;
+}
+.btn-primary{cursor:pointer; padding:10px; font-size:14px;}
+.gigis-btn{background: #70B62C;color:#fff; width:200px; border:none;}
+.clickedbutton{
+    background: #70B6EE !important;
+    color: #fff !important;
+}
+.container{
+max-width:1180px;
+}
+.gigis-btn{margin-left:10px;}
+</style>
+    
+</head>
+<body>
+     <header class="main_header" id="main_header">
+        <div class="calling_email_top">
+		</div>
+        <div class="logo_mc">
+            <div class="logo_sc">
+                <div class="harsha_logo">
+                    <img src="images/logo.png" alt="harsha">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="thank_you" id="thank_you">
+        <div class="section_container">
+            <div class="col-md-12">
+				<div class="row">
+					<div class="col-xs-12">
+						<button id="monsoon-lp"  class="btn btn-primary gigis-btn">Monsoon LP</button>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 iframeddesign">
+						<iframe id="iframe" src="" style="overflow:hidden;height:600px;width:100%" width="100%" height="100%"></iframe>
+					</div>
+				</div>
+               
+            </div>
+        </div>
+    </section>
+    <script src="lib/jquery/jquery-3.4.1.js"></script>
+	<script>
+iframe.style.height = (window.innerHeight-40) +'px';
+$('#iframe').attr('src', 'lead_report.html');
+$('#monsonon-lp').click(function(){
+	$('.btn-primary').removeClass('clickedbutton');
+	$(this).addClass('clickedbutton');
+	$('#iframe').attr('src', '');
+	$('#iframe').attr('src', 'lead_report.html');
+});
+
+</script>
+
+</body>
+</html>
